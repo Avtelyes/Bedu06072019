@@ -81,3 +81,39 @@ footer{
 .alignSign{
     margin-right: 15px;
 }
+
+.text-center{
+    text-align: center;
+}
+
+.text-cover{
+    padding: 10px 0;
+}
+
+.icons-align{
+    display: flex;
+    margin: 40px 0;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon-length{
+    width: 20vw;
+}
+
+.destinies{
+    margin: 40px 0;
+    display: grid;
+}
+
+@media screen and (max-width: 480px){
+    .icons-align{
+        flex-direction: column;
+        margin: 20px 0 40px 0;
+    }
+
+    .icons-align i{
+        margin-top: 30px;
+    }
+}
