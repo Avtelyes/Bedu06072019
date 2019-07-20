@@ -1,155 +1,149 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', 'sans-serif';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "sans-serif";
 }
 
-#buttonSearch{
-    color: white;
-    background-color: black;
-    width: 10%;
-    cursor: pointer;
+#buttonSearch {
+  color: white;
+  background-color: black;
+  width: 10%;
+  cursor: pointer;
 }
 
 nav {
-    background-color: black;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px 0 20px;
-    align-items: center;
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+nav a img {
+  width: 50px;
 }
 
-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+.portrait {
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-image: url("../images/playa.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.portrait .textSearch {
+  color: #ffd6a6;
+}
+.portrait .searchContainer {
+  padding: 1px 1px;
+  background-color: white;
+  width: 80%;
+  margin: 0 10%;
+  height: 3vh;
+  display: flex;
+  justify-content: space-between;
+}
+.portrait .searchContainer .searchInput {
+  border: none;
+  outline: none;
+  width: 80%;
 }
 
-nav a img{
-    width: 50px;
+footer {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 
-footer{
-    background-color: black;
-    padding: 10px;
-    color: white;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
+.description {
+  margin-right: 50px;
 }
 
-.textSearch{
-    color: #ffd6a6;
+.social img {
+  height: 20px;
 }
 
-.searchContainer{
-    padding: 1px 1px;
-    background-color: white;
-    width: 80%;
-    margin: 0 10%;
-    height: 3vh;
-    display: flex;
-    justify-content: space-between;
+.alignSign {
+  margin-right: 15px;
 }
 
-.searchInput{
-    border: none;
-    outline: none;
-    width: 80%;
+.text-center {
+  text-align: center;
 }
 
-.description{
-    margin-right: 50px;
+.text-cover {
+  padding: 10px 0;
 }
 
-.portrait{
-    height: calc(100vh - 100px);
-    width: 100%;
-    background-image: url('../images/playa.jpg') ;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.icons-align {
+  display: flex;
+  margin: 40px 0;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.social img{
-    height: 20px;
+.icon-length {
+  width: 20vw;
 }
 
-.alignSign{
-    margin-right: 15px;
+.destinies {
+  margin: 40px 0;
+  display: grid;
+  text-align: center;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  padding: 0 20px;
 }
 
-.text-center{
-    text-align: center;
+.destinies img {
+  border-radius: 20px;
 }
 
-.text-cover{
-    padding: 10px 0;
+@media screen and (max-width: 480px) {
+  .icons-align {
+    flex-direction: column;
+    margin: 20px 0 40px 0;
+  }
+
+  .icons-align i {
+    margin-top: 30px;
+  }
+
+  .destinies {
+    /* grid-auto-rows: minmax(125px, auto); */
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2px;
+  }
 }
-
-.icons-align{
-    display: flex;
-    margin: 40px 0;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.icon-length{
-    width: 20vw;
-}
-
-.destinies{
-    margin: 40px 0;
-    display: grid;
-    text-align: center;
-    grid-gap: .5em;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    padding: 0 20px;
-}
-
-.destinies img{
-    border-radius: 20px;
-}
-
-@media screen and (max-width: 480px){
-    .icons-align{
-        flex-direction: column;
-        margin: 20px 0 40px 0;
-    }
-
-    .icons-align i{
-        margin-top: 30px;
-    }
-
-    .destinies{
-        /* grid-auto-rows: minmax(125px, auto); */
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 2px;
-    }
-}
-
 @media screen and (min-width: 480px) {
-    .destinies {
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 2px;
-    }
+  .destinies {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2px;
+  }
 }
-
 @media screen and (min-width: 768px) {
-    .destinies {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2px;
-    }
+  .destinies {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .destinies {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+  }
 }
 
-@media screen and (min-width: 1024px) {
-    .destinies {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2px;
-    }
-}
+/*# sourceMappingURL=main.css.map */
