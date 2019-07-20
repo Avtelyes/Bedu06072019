@@ -1,0 +1,30 @@
+.portrait{
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-image: url('../images/playa.jpg') ;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .textSearch{
+        color: #ffd6a6;
+    }
+
+    .searchContainer{
+        padding: 1px 1px;
+        background-color: $color-white;
+        width: 80%;
+        margin: 0 10%;
+        height: 3vh;
+        display: flex;
+        justify-content: space-between;
+
+        .searchInput{
+            border: none;
+            outline: none;
+            width: 80%;
+        }
+    }
+}
